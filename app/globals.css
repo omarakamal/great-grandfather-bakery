@@ -1,0 +1,42 @@
+:root {
+  --bg: #EBCB98;
+  --accent: #B67332;
+  --dark: #3F260B;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--dark);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 4rem 1.5rem;
+}
+
+h1, h2, h3 {
+  color: var(--dark);
+}
+
+button, .btn {
+  background: var(--accent);
+  color: var(--white);
+  padding: 0.8rem 1.6rem;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover, .btn:hover {
+  opacity: 0.9;
+}

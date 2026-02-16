@@ -1,0 +1,11 @@
+.about-body{
+    max-width: 25rem;
+    font-size: 18px;
+}
+
+.about-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px
+}

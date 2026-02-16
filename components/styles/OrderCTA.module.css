@@ -1,0 +1,12 @@
+.orderContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    border-style: rgba(0,0,0,0.2) 0;
+}
+.orderLink{
+    text-decoration: none;
+    width: 30rem;
+    border-radius: 30px;
+}
