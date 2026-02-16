@@ -13,43 +13,59 @@ export const metadata = {
     "fresh bread pudding Bahrain",
     "homemade",
     "desserts",
-    "bahrain"
+    "bahrain",
   ],
   // metadataBase: new URL("https://yourdomain.com"),
   openGraph: {
     title: "Great Grandfather Bakery",
-    description:
-      "Freshly baked delights every day. Order now in Bahrain.",
+    description: "Freshly baked delights every day. Order now in Bahrain.",
     url: "https://great-grandfather-bakery.netlify.app/",
     siteName: "Great Grandfather Bakery",
     locale: "en_US",
     type: "website",
-    images:{
-      url:"/gallery/bread1"
-    }
+    images: {
+      url: "/gallery/bread1",
+    },
   },
-   icons: {
+  icons: {
     icon: "/favicon.ico",
     apple: "/apple-touch-icon.png",
   },
-  robots:{
-    index:true,
-    follow:true,
-    nocache:false,
-    googleBot:{
-      index:true,
-      follow:true,
-      "max-snippet":-1,
-      "max-image-preview":"large",
-      "max-video-preview":-1
-    }
-  }
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+    },
+  },
 };
-
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Bakery",
+            name: "Great Grandfather Bakery",
+            image: "https://yourdomain.com/logo.png",
+            address: {
+              "@type": "PostalAddress",
+              addressLocality: "Bahrain",
+              addressCountry: "BH",
+            },
+            telephone: "+973XXXXXXXX",
+            url: "https://yourdomain.com",
+          }),
+        }}
+      />
       <body>
         <Navbar />
         {children}
