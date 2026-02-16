@@ -2,15 +2,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  padding: .6rem 2rem;
+  padding: 0.6rem 2rem;
   background-color: var(--bg);
-
   position: sticky;
   top: 0;
   z-index: 1000;
-  border-bottom:1px solid rgba(0,0,0,0.2) ;
-
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .logo {
@@ -20,7 +17,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  cursor:context-menu;
+  cursor: context-menu;
 }
 
 .links {
@@ -34,12 +31,11 @@
   color: var(--dark);
   font-weight: 500;
   transition: 0.3s ease;
-  padding: 5px
+  padding: 5px;
 }
 
 .link:hover {
   color: var(--accent);
-  /* background-color: aliceblue; */
 }
 
 .orderBtn {
@@ -56,4 +52,55 @@
   opacity: 0.85;
 }
 
+/* ========================= */
+/* Mobile Styles */
+/* ========================= */
 
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: var(--dark);
+  border-radius: 2px;
+}
+
+/* Mobile breakpoint */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--bg);
+    flex-direction: column;
+    align-items: flex-start;
+    width: 220px;
+    padding: 1.5rem;
+    gap: 1.2rem;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease;
+  }
+
+  .mobileOpen {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+        /* height:100vh */
+
+  }
+}
