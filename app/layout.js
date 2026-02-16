@@ -67,15 +67,15 @@ export default function RootLayout({ children }) {
         }}
       />
 
-      <script
+      {/* <script
         async
         src="https://www.googletagmanager.com/gtag/js?id=G-WGZXTPVXQY"
-      ></script>
-      <script>
+      ></script> */}
+      {/* <script>
         window.dataLayer = window.dataLayer || []; function gtag()
         {dataLayer.push(arguments)}
         gtag('js', new Date()); gtag('config', 'G-WGZXTPVXQY');
-      </script>
+      </script> */}
       <body>
         <Navbar />
         {children}
