@@ -1,6 +1,6 @@
 .hero {
   height: 100vh; /* full viewport height */
-  background-image: url('https://cdn.jwplayer.com/v2/media/OIkkQOlX/thumbnails/5nid2CZd.jpg?width=1280'); /* replace with your bakery image */
+  background-image: url('/gallery/bread1.jpg'); /* replace with your bakery image */
   background-size: cover;
   background-position: center;
   position: relative;

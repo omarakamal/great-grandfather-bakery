@@ -2,19 +2,50 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-
 export const metadata = {
-  icons: {
+  title: "Great Grandfather Bakery | Fresh Desserts in Bahrain",
+  description:
+    "The best banana pudding dessert made locally in Bahrain. Based on tradition.",
+  keywords: [
+    "bakery Bahrain",
+    "cakes in Bahrain",
+    "order desserts Bahrain",
+    "fresh bread pudding Bahrain",
+    "homemade",
+    "desserts",
+    "bahrain"
+  ],
+  // metadataBase: new URL("https://yourdomain.com"),
+  openGraph: {
+    title: "Great Grandfather Bakery",
+    description:
+      "Freshly baked delights every day. Order now in Bahrain.",
+    url: "https://great-grandfather-bakery.netlify.app/",
+    siteName: "Great Grandfather Bakery",
+    locale: "en_US",
+    type: "website",
+    images:{
+      url:"/gallery/bread1"
+    }
+  },
+   icons: {
     icon: "/favicon.ico",
     apple: "/apple-touch-icon.png",
   },
-  title: {
-    default: "Sweet Haven Desserts | Manama",
-    template: "%s | Sweet Haven Desserts"
-  },
-  description:
-    "Fresh cakes, brownies and desserts made daily in Manama."
+  robots:{
+    index:true,
+    follow:true,
+    nocache:false,
+    googleBot:{
+      index:true,
+      follow:true,
+      "max-snippet":-1,
+      "max-image-preview":"large",
+      "max-video-preview":-1
+    }
+  }
 };
+
 
 export default function RootLayout({ children }) {
   return (
