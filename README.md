@@ -17,3 +17,8 @@ npm run dev
 - Next.js (React framework)
 - JavaScript (ES6+)
 - CSS Modules for styling
+
+
+
+## Contact Information
+- For any inquiries on this website or for licensing please contact the lead developer
