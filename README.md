@@ -19,6 +19,9 @@ npm run dev
 - CSS Modules for styling
 
 
+## Deployed Link:
+- [Link to Deployed Site](https://great-grandfather-bakery.netlify.app/)
+
 
 ## Contact Information
 - For any inquiries on this website or for licensing please contact the lead developer
