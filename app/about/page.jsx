@@ -1,5 +1,7 @@
 export const metadata = {
-  title: "About Us",
+  title: "About Us - Great Grandfather Bakery",
+  description: "The best Banana Pudding made locally in bahrain",
+  keywords: ["dessert","banana","pudding","sweets","bahrain","manama"]
 };
 
 import './about.css'
